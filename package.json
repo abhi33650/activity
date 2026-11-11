@@ -1,0 +1,40 @@
+{
+  "name": "auto-activity-electron",
+  "version": "1.0.0",
+  "description": "Windows desktop auto keyboard/mouse activity utility",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "AutoActivity",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.autoactivity.desktop",
+    "productName": "AutoActivity",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "style.css"
+    ],
+    "win": {
+      "target": "nsis",
+      "artifactName": "AutoActivity-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

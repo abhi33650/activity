@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.app {
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #2563eb;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: 23px;
+}
+
+header p {
+  margin: 3px 0 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 17px;
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-size: 15px;
+  margin: 0 0 16px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 7px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+input, select {
+  width: 100%;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  border-color: #60a5fa;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.hint {
+  color: #94a3b8;
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+.status-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.stopped {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+.status.running {
+  background: #14532d;
+  color: #bbf7d0;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+.next-label {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.danger:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.secondary {
+  width: 100%;
+  margin-top: 10px;
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.secondary:hover {
+  background: #475569;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 17px;
+}
